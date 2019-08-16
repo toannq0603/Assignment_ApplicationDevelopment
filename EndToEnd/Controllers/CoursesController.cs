@@ -20,6 +20,18 @@ namespace EndToEnd.Controllers
         {
             return View(db.Courses.ToList());
         }
+        
+        /*
+        public ActionResult Index123()
+        {
+            return View(db.Courses.ToList());
+        } 
+        */
+
+        public ActionResult Indexmode()
+        {
+            return View(db.Courses.ToList());
+        }
 
         // GET: Courses/Details/5
         public ActionResult Details(int? id)

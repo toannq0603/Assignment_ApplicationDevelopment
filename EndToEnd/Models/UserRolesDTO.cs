@@ -21,7 +21,20 @@ namespace EndToEnd.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime EnrollmentDate { get; set; }
+        [Display(Name = "Course")]
+        public string CourseID { get; set; }
+        public string Title { get; set; }
+        public string Credits { get; set; }
 
+    }
+
+    public class Training
+    {
+        [Key]
+        [Display(Name = "Course")]
+        public string CourseID { get; set; }
+        public string Title { get; set; }
+        public string Credits { get; set; }
     }
 
     public class UserRolesDTO
